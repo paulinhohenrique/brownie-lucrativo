@@ -17,11 +17,15 @@ import {PlaceHolderImages} from '@/lib/placeholder-images';
 import {Button} from '@/components/ui/button';
 import {Card, CardContent, CardHeader, CardTitle} from '@/components/ui/card';
 import {BrownieIcon} from '@/components/icons';
+import {Avatar, AvatarFallback, AvatarImage} from '@/components/ui/avatar';
 
 const heroImage = PlaceHolderImages.find(img => img.id === 'hero-brownie');
 const authorImage = PlaceHolderImages.find(img => img.id === 'author-pic');
 const socialProofImage1 = PlaceHolderImages.find(
   img => img.id === 'social-proof-1'
+);
+const socialProofImage2 = PlaceHolderImages.find(
+  img => img.id === 'social-proof-2'
 );
 const checkoutUrl = 'https://go.paradisepagbr.com/pm1rffnciq';
 
@@ -192,6 +196,51 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+
+        {/* Image Placeholder Section */}
+        <section className="container py-16 md:py-24">
+          <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-xl">
+            {socialProofImage2 && (
+              <Image
+                src={socialProofImage2.imageUrl}
+                alt={socialProofImage2.description}
+                data-ai-hint={socialProofImage2.imageHint}
+                fill
+                className="object-cover"
+              />
+            )}
+          </div>
+        </section>
+        
+        {/* Author Section */}
+        <section className="bg-secondary py-16 md:py-24">
+          <div className="container grid items-center gap-12 md:grid-cols-3">
+            <div className="relative h-80 w-full overflow-hidden rounded-lg shadow-xl md:h-96">
+              {authorImage && (
+                <Image
+                  src={authorImage.imageUrl}
+                  alt={authorImage.description}
+                  data-ai-hint={authorImage.imageHint}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </div>
+            <div className="md:col-span-2">
+              <h2 className="font-headline text-3xl font-bold">
+                Sobre a Professora Eloisa Cola
+              </h2>
+              <p className="mt-4 text-lg text-foreground/80">
+                Eloisa Cola é uma confeiteira renomada com mais de 10 anos de
+                experiência, especializada em transformar confeitaria caseira em
+                negócios de sucesso. Sua paixão é ajudar mulheres a
+                conquistarem independência financeira através de receitas
+                deliciosas e estratégias de negócio inteligentes.
+              </p>
+            </div>
+          </div>
+        </section>
+
 
         {/* Bonus Section */}
         <section className="bg-primary text-primary-foreground py-16 md:py-24">
