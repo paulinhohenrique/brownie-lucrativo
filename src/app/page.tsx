@@ -240,18 +240,6 @@ export default function LandingPage() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-4">
-                <Gift className="mt-1 h-6 w-6 shrink-0" />
-                <div>
-                  <h3 className="font-headline text-xl font-semibold">
-                    Acesso à Comunidade VIP
-                  </h3>
-                  <p className="text-primary-foreground/80">
-                    Troque experiências, tire dúvidas e faça networking com
-                    outras confeiteiras de sucesso.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
