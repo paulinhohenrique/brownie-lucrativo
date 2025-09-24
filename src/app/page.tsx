@@ -241,6 +241,20 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* Third Image Placeholder Section */}
+        <section className="container py-16 md:py-24">
+          <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-xl">
+            {heroImage && (
+              <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                data-ai-hint={heroImage.imageHint}
+                fill
+                className="object-cover"
+              />
+            )}
+          </div>
+        </section>
 
         {/* Bonus Section */}
         <section className="bg-primary text-primary-foreground py-16 md:py-24">
