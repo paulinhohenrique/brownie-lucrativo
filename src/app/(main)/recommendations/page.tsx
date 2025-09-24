@@ -3,7 +3,7 @@ import {getPersonalizedRecipeRecommendations} from '@/ai/flows/personalized-reci
 import {RecommendationForm} from './recommendation-form';
 
 export const metadata: Metadata = {
-  title: 'AI Recommendations - Brownie Boost',
+  title: 'AI Recommendations - Brownie Lucrativo',
 };
 
 export default function RecommendationsPage() {

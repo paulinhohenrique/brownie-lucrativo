@@ -3,7 +3,7 @@ import {Toaster} from '@/components/ui/toaster';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Brownie Boost',
+  title: 'Brownie Lucrativo',
   description: 'Transform your baking passion into profit.',
 };
 

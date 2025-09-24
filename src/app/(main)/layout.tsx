@@ -58,7 +58,7 @@ export default function MainLayout({children}: {children: ReactNode}) {
               )}
             >
               <BrownieIcon className="h-6 w-6 text-primary" />
-              <span className="font-bold">Brownie Boost</span>
+              <span className="font-bold">Brownie Lucrativo</span>
             </Link>
             <SidebarTrigger />
           </div>

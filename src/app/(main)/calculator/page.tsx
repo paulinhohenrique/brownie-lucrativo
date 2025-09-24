@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import {CalculatorClient} from './calculator-client';
 
 export const metadata: Metadata = {
-  title: 'Cost Calculator - Brownie Boost',
+  title: 'Cost Calculator - Brownie Lucrativo',
 };
 
 export default function CalculatorPage() {

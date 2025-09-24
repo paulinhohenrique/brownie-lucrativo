@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/accordion';
 
 export const metadata: Metadata = {
-  title: 'Sales Strategies - Brownie Boost',
+  title: 'Sales Strategies - Brownie Lucrativo',
 };
 
 const strategies = [

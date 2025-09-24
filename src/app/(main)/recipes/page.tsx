@@ -16,7 +16,7 @@ import {
 import {Badge} from '@/components/ui/badge';
 
 export const metadata: Metadata = {
-  title: 'Recipes - Brownie Boost',
+  title: 'Recipes - Brownie Lucrativo',
 };
 
 export default function RecipesPage() {

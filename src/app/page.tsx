@@ -35,7 +35,7 @@ export default function LandingPage() {
             className="flex items-center gap-2 font-headline text-xl"
           >
             <BrownieIcon className="h-6 w-6 text-primary" />
-            <span className="font-bold">Brownie Boost</span>
+            <span className="font-bold">Brownie Lucrativo</span>
           </Link>
           <Button asChild>
             <a href={checkoutUrl} target="_blank" rel="noopener noreferrer">
@@ -406,7 +406,7 @@ export default function LandingPage() {
       <footer className="border-t">
         <div className="container flex h-16 items-center justify-between text-sm text-foreground/60">
           <p>
-            &copy; {new Date().getFullYear()} Brownie Boost. All rights
+            &copy; {new Date().getFullYear()} Brownie Lucrativo. All rights
             reserved.
           </p>
           <p>Feito com ❤️ para confeiteiras de sucesso.</p>

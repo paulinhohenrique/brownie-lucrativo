@@ -15,7 +15,7 @@ import {Avatar, AvatarFallback, AvatarImage} from '@/components/ui/avatar';
 import {Badge} from '@/components/ui/badge';
 
 export const metadata: Metadata = {
-  title: 'Community Forum - Brownie Boost',
+  title: 'Community Forum - Brownie Lucrativo',
 };
 
 export default function ForumPage() {

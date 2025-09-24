@@ -24,7 +24,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${recipe.name} - Brownie Boost`,
+    title: `${recipe.name} - Brownie Lucrativo`,
     description: recipe.description,
   };
 }

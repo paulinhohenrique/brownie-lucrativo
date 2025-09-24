@@ -10,7 +10,7 @@ import {ScrollArea} from '@/components/ui/scroll-area';
 import {Card, CardContent, CardFooter, CardHeader} from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'Expert Support - Brownie Boost',
+  title: 'Expert Support - Brownie Lucrativo',
 };
 
 export default function SupportPage() {
