@@ -33,7 +33,7 @@ export default function LandingPage() {
             <span className="font-bold">Brownie Boost</span>
           </Link>
           <Button asChild>
-            <Link href="/recipes">Comece a Lucrar</Link>
+            <Link href="/#checkout">Comece a Lucrar</Link>
           </Button>
         </div>
       </header>
@@ -51,7 +51,7 @@ export default function LandingPage() {
               que custam menos de R$1 para fazer e vendem por até R$5.
             </p>
             <Button size="lg" asChild className="mt-4">
-              <Link href="/recipes">Quero Começar Agora</Link>
+              <Link href="/#checkout">Quero Começar Agora</Link>
             </Button>
           </div>
           <div className="relative h-64 w-full overflow-hidden rounded-lg shadow-2xl md:h-[400px]">
@@ -263,7 +263,7 @@ export default function LandingPage() {
               vida financeira está a um clique de distância.
             </p>
             <Button size="lg" asChild className="mt-8">
-              <Link href="/recipes">Sim, Quero Lucrar com Brownies!</Link>
+              <Link href="/#checkout">Sim, Quero Lucrar com Brownies!</Link>
             </Button>
           </div>
         </section>
