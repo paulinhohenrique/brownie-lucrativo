@@ -307,34 +307,6 @@ export default function LandingPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="font-headline text-xl">
-                    Bônus: 7. GUIA PRÁTICO PARA INICIANTES
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2 text-foreground/80">
-                  <p>Passo a passo para quem está começando na confeitaria</p>
-                  <p>Suporte exclusivo com a Professora Eloisa Cola</p>
-                  <p>Metodologia descomplicada: receitas econômicas e saborosas</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="font-headline text-xl">
-                    Bônus: 9. SE DESTAQUE NA CONFEITARIA COM BROWNIES
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2 text-foreground/80">
-                  <p>Técnicas avançadas para ser referência no mercado</p>
-                  <p>
-                    Acompanhamento e feedback contínuo para aprimorar seus
-                    resultados
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="font-headline text-xl">
                     4. BROWNIES VARIADOS E VICIANTES
                   </CardTitle>
                 </CardHeader>
@@ -355,6 +327,8 @@ export default function LandingPage() {
                   <p>Coberturas que encantam o paladar e os olhos</p>
                 </CardContent>
               </Card>
+            </div>
+            <div className="space-y-6">
               <Card>
                 <CardHeader>
                   <CardTitle className="font-headline text-xl">
@@ -367,7 +341,19 @@ export default function LandingPage() {
                   <p>Dicas de marketing e apresentação para atrair mais clientes</p>
                 </CardContent>
               </Card>
-              <Card>
+               <Card>
+                <CardHeader>
+                  <CardTitle className="font-headline text-xl">
+                    Bônus: 7. GUIA PRÁTICO PARA INICIANTES
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2 text-foreground/80">
+                  <p>Passo a passo para quem está começando na confeitaria</p>
+                  <p>Suporte exclusivo com a Professora Eloisa Cola</p>
+                  <p>Metodologia descomplicada: receitas econômicas e saborosas</p>
+                </CardContent>
+              </Card>
+               <Card>
                 <CardHeader>
                   <CardTitle className="font-headline text-xl">
                     Bônus: 8. AMPLIE SEU CARDÁPIO
@@ -376,6 +362,20 @@ export default function LandingPage() {
                 <CardContent className="space-y-2 text-foreground/80">
                   <p>Receitas testadas e aprovadas para todos os paladares</p>
                   <p>Brownies inclusivos: opções sem glúten e lactose</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="font-headline text-xl">
+                    Bônus: 9. SE DESTAQUE NA CONFEITARIA COM BROWNIES
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-2 text-foreground/80">
+                  <p>Técnicas avançadas para ser referência no mercado</p>
+                  <p>
+                    Acompanhamento e feedback contínuo para aprimorar seus
+                    resultados
+                  </p>
                 </CardContent>
               </Card>
             </div>
