@@ -198,7 +198,7 @@ export default function LandingPage() {
         </section>
         
         {/* Full-width Image Section */}
-        <section className="container py-16 md:py-24">
+        <section className="container hidden py-16 md:block md:py-24">
           <div className="relative aspect-video w-full overflow-hidden rounded-lg shadow-xl">
               <Image
                 src="https://i.imgur.com/jugdEbI.png"
@@ -265,6 +265,17 @@ export default function LandingPage() {
               acelerar seus resultados.
             </p>
             <div className="mx-auto mt-12 grid max-w-4xl gap-8 text-left md:grid-cols-2">
+              <div className="flex items-start gap-4">
+                <Gift className="mt-1 h-6 w-6 shrink-0" />
+                <div>
+                  <h3 className="font-headline text-xl font-semibold">
+                    PDF Brownie Supreme
+                  </h3>
+                  <p className="text-primary-foreground/80">
+                    De <span className="line-through">R$ 250,00</span> por <span className="line-through">R$ 150,00</span>. Hoje, de graça nesta oferta.
+                  </p>
+                </div>
+              </div>
               <div className="flex items-start gap-4">
                 <Gift className="mt-1 h-6 w-6 shrink-0" />
                 <div>
