@@ -28,7 +28,7 @@ const socialProofImage1 = PlaceHolderImages.find(
 const socialProofImage2 = PlaceHolderImages.find(
   img => img.id === 'social-proof-2'
 );
-const checkoutUrl = 'https://go.paradisepagbr.com/pm1rffnciq';
+const checkoutUrl = '/checkout';
 
 export default function LandingPage() {
   return (
@@ -43,9 +43,9 @@ export default function LandingPage() {
             <span className="font-bold">Brownie Lucrativo</span>
           </Link>
           <Button asChild>
-            <a href={checkoutUrl} target="_blank" rel="noopener noreferrer">
+            <Link href={checkoutUrl}>
               Comece a Lucrar
-            </a>
+            </Link>
           </Button>
         </div>
       </header>
@@ -68,9 +68,9 @@ export default function LandingPage() {
               asChild
               className="mt-4 bg-gradient-to-r from-orange-500 to-red-500 text-lg font-bold text-white shadow-md transition-transform hover:scale-105 hover:shadow-xl"
             >
-              <a href={checkoutUrl} target="_blank" rel="noopener noreferrer">
+              <Link href={checkoutUrl}>
                 Quero Começar Agora
-              </a>
+              </Link>
             </Button>
           </div>
           <div className="relative h-64 w-full overflow-hidden rounded-lg shadow-2xl md:h-[400px]">

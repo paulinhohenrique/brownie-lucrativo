@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const checkoutUrl = 'https://go.paradisepagbr.com/pm1rffnciq';
+const checkoutUrl = '/checkout';
 
 export function OfferCard() {
   return (
@@ -9,14 +9,12 @@ export function OfferCard() {
         <p className="font-headline text-5xl font-bold">R$ 19,90</p>
         <p className="mt-1 font-semibold">no PIX</p>
         
-        <a
+        <Link
           href={checkoutUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 block w-full rounded-lg bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 text-lg font-bold uppercase text-white shadow-md transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-xl"
+          className="mt-6 block w-full rounded-lg bg-gradient-to-r from-orange-500 to-red-500 px-4 py-2 text-base font-bold uppercase text-white shadow-md transition-transform duration-200 ease-in-out hover:scale-105 hover:shadow-xl"
         >
           Me inscrever agora e ganhar +2 mil
-        </a>
+        </Link>
       </div>
     </div>
   );
