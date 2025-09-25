@@ -196,34 +196,17 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-
-        {/* Image Placeholder Section */}
+        
+        {/* Full-width Image Section */}
         <section className="container py-16 md:py-24">
-          <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-xl">
-            {socialProofImage2 && (
-              <Image
-                src={socialProofImage2.imageUrl}
-                alt={socialProofImage2.description}
-                data-ai-hint={socialProofImage2.imageHint}
-                fill
-                className="object-cover"
-              />
-            )}
-          </div>
-        </section>
-
-        {/* Desktop-only Image Section */}
-        <section className="hidden container py-16 md:py-24 md:block">
-          <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-xl">
-            {socialProofImage2 && (
+          <div className="relative aspect-video w-full overflow-hidden rounded-lg shadow-xl">
               <Image
                 src="https://i.imgur.com/jugdEbI.png"
                 alt="More delicious brownies"
                 data-ai-hint="brownie collage"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
-            )}
           </div>
         </section>
 
