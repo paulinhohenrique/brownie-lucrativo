@@ -18,6 +18,7 @@ import {Button} from '@/components/ui/button';
 import {Card, CardContent, CardHeader, CardTitle} from '@/components/ui/card';
 import {BrownieIcon} from '@/components/icons';
 import {Avatar, AvatarFallback, AvatarImage} from '@/components/ui/avatar';
+import { OfferCard } from '@/components/offer-card';
 
 const heroImage = PlaceHolderImages.find(img => img.id === 'hero-brownie');
 const authorImage = PlaceHolderImages.find(img => img.id === 'author-pic');
@@ -470,11 +471,7 @@ export default function LandingPage() {
               Supreme com todos os bônus inclusos. A oportunidade de mudar sua
               vida financeira está a um clique de distância.
             </p>
-            <Button size="lg" asChild className="mt-8">
-              <a href={checkoutUrl} target="_blank" rel="noopener noreferrer">
-                Sim, Quero Lucrar com Brownies!
-              </a>
-            </Button>
+            <OfferCard />
           </div>
         </section>
       </main>
