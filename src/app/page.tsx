@@ -63,7 +63,11 @@ export default function LandingPage() {
               etapas, testado e comprovado, para criar brownies irresistíveis
               que custam menos de R$1 para fazer e vendem por até R$5.
             </p>
-            <Button size="lg" asChild className="mt-4">
+            <Button
+              size="lg"
+              asChild
+              className="mt-4 bg-gradient-to-r from-orange-500 to-red-500 text-lg font-bold text-white shadow-md transition-transform hover:scale-105 hover:shadow-xl"
+            >
               <a href={checkoutUrl} target="_blank" rel="noopener noreferrer">
                 Quero Começar Agora
               </a>
