@@ -211,7 +211,22 @@ export default function LandingPage() {
             )}
           </div>
         </section>
-        
+
+        {/* Desktop-only Image Section */}
+        <section className="hidden container py-16 md:py-24 md:block">
+          <div className="relative h-96 w-full overflow-hidden rounded-lg shadow-xl">
+            {socialProofImage2 && (
+              <Image
+                src="https://i.imgur.com/jugdEbI.png"
+                alt="More delicious brownies"
+                data-ai-hint="brownie collage"
+                fill
+                className="object-cover"
+              />
+            )}
+          </div>
+        </section>
+
         {/* Author Section */}
         <section className="bg-secondary py-16 md:py-24">
           <div className="container grid items-center gap-12 md:grid-cols-3">
@@ -389,10 +404,12 @@ export default function LandingPage() {
                 <CardContent className="space-y-2 text-foreground/80">
                   <p>Precificação inteligente: como definir o valor ideal</p>
                   <p>Estratégias de venda para o brownie supreme</p>
-                  <p>Dicas de marketing e apresentação para atrair mais clientes</p>
+                  <p>
+                    Dicas de marketing e apresentação para atrair mais clientes
+                  </p>
                 </CardContent>
               </Card>
-               <Card>
+              <Card>
                 <CardHeader>
                   <CardTitle className="font-headline text-xl">
                     Bônus: 7. GUIA PRÁTICO PARA INICIANTES
@@ -401,10 +418,12 @@ export default function LandingPage() {
                 <CardContent className="space-y-2 text-foreground/80">
                   <p>Passo a passo para quem está começando na confeitaria</p>
                   <p>Suporte exclusivo com a Professora Eloisa Cola</p>
-                  <p>Metodologia descomplicada: receitas econômicas e saborosas</p>
+                  <p>
+                    Metodologia descomplicada: receitas econômicas e saborosas
+                  </p>
                 </CardContent>
               </Card>
-               <Card>
+              <Card>
                 <CardHeader>
                   <CardTitle className="font-headline text-xl">
                     Bônus: 8. AMPLIE SEU CARDÁPIO
