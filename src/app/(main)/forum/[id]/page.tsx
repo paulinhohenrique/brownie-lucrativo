@@ -14,6 +14,12 @@ type Props = {
   params: {id: string};
 };
 
+export async function generateStaticParams() {
+  return forumThreads.map(thread => ({
+    id: thread.id,
+  }));
+}
+
 export async function generateMetadata({params}: Props): Promise<Metadata> {
   const thread = forumThreads.find(t => t.id === params.id);
   if (!thread) {

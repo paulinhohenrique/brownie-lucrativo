@@ -14,6 +14,12 @@ type Props = {
   params: {slug: string};
 };
 
+export async function generateStaticParams() {
+  return recipes.map(recipe => ({
+    slug: recipe.slug,
+  }));
+}
+
 export async function generateMetadata({params}: Props): Promise<Metadata> {
   const recipe = recipes.find(r => r.slug === params.slug);
 
