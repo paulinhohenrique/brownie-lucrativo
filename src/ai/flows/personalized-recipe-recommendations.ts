@@ -1,4 +1,3 @@
-'use server';
 /**
  * @fileOverview A personalized brownie recipe recommendation AI agent.
  *
@@ -10,7 +9,7 @@
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
-const PersonalizedRecipeRecommendationsInputSchema = z.object({
+export const PersonalizedRecipeRecommendationsInputSchema = z.object({
   dietaryRestrictions: z
     .string()
     .describe(

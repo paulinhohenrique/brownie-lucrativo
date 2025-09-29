@@ -2,7 +2,7 @@
 
 import {useState, useTransition} from 'react';
 import {Sparkles, Loader2, Wand2} from 'lucide-react';
-import type {
+import {
   PersonalizedRecipeRecommendationsInput,
   PersonalizedRecipeRecommendationsOutput,
 } from '@/ai/flows/personalized-recipe-recommendations';
@@ -13,13 +13,7 @@ import {Textarea} from '@/components/ui/textarea';
 import {Button} from '@/components/ui/button';
 import {Card, CardContent, CardHeader, CardTitle} from '@/components/ui/card';
 
-type RecommendationFormProps = {
-  getRecommendations: (
-    input: PersonalizedRecipeRecommendationsInput
-  ) => Promise<PersonalizedRecipeRecommendationsOutput>;
-};
-
-export function RecommendationForm({getRecommendations}: RecommendationFormProps) {
+export function RecommendationForm() {
   const [isPending, startTransition] = useTransition();
   const {toast} = useToast();
   const [formData, setFormData] = useState<PersonalizedRecipeRecommendationsInput>({
@@ -35,7 +29,19 @@ export function RecommendationForm({getRecommendations}: RecommendationFormProps
 
     startTransition(async () => {
       try {
-        const recommendation = await getRecommendations(formData);
+        const response = await fetch('/api/recommendations', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        const recommendation = await response.json();
         setResult(recommendation);
       } catch (error) {
         console.error('Failed to get recommendations:', error);

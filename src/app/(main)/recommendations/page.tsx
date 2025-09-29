@@ -1,5 +1,4 @@
 import type {Metadata} from 'next';
-import {getPersonalizedRecipeRecommendations} from '@/ai/flows/personalized-recipe-recommendations';
 import {RecommendationForm} from './recommendation-form';
 
 export const metadata: Metadata = {
@@ -18,9 +17,7 @@ export default function RecommendationsPage() {
           alimentares, e nossa IA criará uma receita exclusiva para você.
         </p>
       </div>
-      <RecommendationForm
-        getRecommendations={getPersonalizedRecipeRecommendations}
-      />
+      <RecommendationForm />
     </div>
   );
 }
