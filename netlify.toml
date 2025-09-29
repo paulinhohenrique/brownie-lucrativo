@@ -1,0 +1,21 @@
+# Netlify build configuration
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # Build command to run
+  command = "npm run build"
+  
+  # Directory to publish (the output of your build command)
+  publish = "out"
+
+[build.environment]
+  # Set the Node.js version.
+  NODE_VERSION = "20"
+  # Disable telemetry to speed up build.
+  NEXT_TELEMETRY_DISABLED = "1"
+
+## Optional: Redirects and headers
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
