@@ -1,8 +1,11 @@
 import type {NextApiRequest, NextApiResponse} from 'next';
-import {
-  getPersonalizedRecipeRecommendations,
-  PersonalizedRecipeRecommendationsInputSchema,
-} from '@/ai/flows/personalized-recipe-recommendations';
+import {getPersonalizedRecipeRecommendations} from '@/ai/flows/personalized-recipe-recommendations';
+import {z} from 'zod';
+
+const PersonalizedRecipeRecommendationsInputSchema = z.object({
+  dietaryRestrictions: z.string(),
+  brownieTypePreferences: z.string(),
+});
 
 export default async function handler(
   req: NextApiRequest,

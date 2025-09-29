@@ -1,3 +1,4 @@
+'use server';
 /**
  * @fileOverview A personalized brownie recipe recommendation AI agent.
  *
@@ -9,21 +10,10 @@
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
-export const PersonalizedRecipeRecommendationsInputSchema = z.object({
-  dietaryRestrictions: z
-    .string()
-    .describe(
-      'A comma separated list of dietary restrictions the user may have, such as gluten-free, lactose-free, nut allergy, etc.'
-    ),
-  brownieTypePreferences: z
-    .string()
-    .describe(
-      'A description of brownie types the user likes, such as chocolate, caramel, etc.'
-    ),
-});
-export type PersonalizedRecipeRecommendationsInput = z.infer<
-  typeof PersonalizedRecipeRecommendationsInputSchema
->;
+export type PersonalizedRecipeRecommendationsInput = {
+  dietaryRestrictions: string;
+  brownieTypePreferences: string;
+};
 
 const PersonalizedRecipeRecommendationsOutputSchema = z.object({
   recipeName: z.string().describe('The recommended recipe name.'),
@@ -47,7 +37,6 @@ export async function getPersonalizedRecipeRecommendations(
 
 const prompt = ai.definePrompt({
   name: 'personalizedRecipeRecommendationsPrompt',
-  input: {schema: PersonalizedRecipeRecommendationsInputSchema},
   output: {schema: PersonalizedRecipeRecommendationsOutputSchema},
   prompt: `You are an expert brownie recipe recommender. Given the user's dietary restrictions and brownie type preferences, you will recommend a specific brownie recipe that aligns with their needs. Explain why the recommended recipe is a good fit for the user.
 
@@ -64,7 +53,6 @@ Reasoning: [why this recipe suits the user]`,
 const personalizedRecipeRecommendationsFlow = ai.defineFlow(
   {
     name: 'personalizedRecipeRecommendationsFlow',
-    inputSchema: PersonalizedRecipeRecommendationsInputSchema,
     outputSchema: PersonalizedRecipeRecommendationsOutputSchema,
   },
   async input => {
