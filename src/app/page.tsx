@@ -449,6 +449,17 @@ export default function LandingPage() {
               </Card>
             </div>
           </div>
+           <div className="mt-12 text-center">
+            <Button
+              size="lg"
+              asChild
+              className="bg-gradient-to-r from-orange-500 to-red-500 text-lg font-bold text-white shadow-md transition-transform hover:scale-105 hover:shadow-xl"
+            >
+              <a href={checkoutUrl} target="_blank" rel="noopener noreferrer">
+                Quero Começar Agora
+              </a>
+            </Button>
+          </div>
         </section>
 
         {/* Guarantee Section */}
