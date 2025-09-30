@@ -56,7 +56,7 @@ export default function LandingPage() {
           <div className="flex flex-col items-start gap-4">
             <h1 className="font-headline text-3xl font-bold tracking-tighter md:text-5xl lg:text-6xl">
               Transforme sua paixão por brownies em R$2.000 a mais todo mês com
-              nosso PDF.
+              nosso E-book.
             </h1>
             <p className="max-w-xl text-lg text-foreground/80">
               Com o e-book Brownie Supreme, você aprende um passo a passo de 3
@@ -231,10 +231,10 @@ export default function LandingPage() {
             </div>
             <div className="md:col-span-2">
               <h2 className="font-headline text-3xl font-bold">
-                Sobre a Professora Eloisa Cola
+                Sobre a Professora Ana Prado
               </h2>
               <p className="mt-4 text-lg text-foreground/80">
-                Eloisa Cola é uma confeiteira renomada com mais de 10 anos de
+                Ana Prado é uma confeiteira renomada com mais de 10 anos de
                 experiência, especializada em transformar confeitaria caseira em
                 negócios de sucesso. Sua paixão é ajudar mulheres a
                 conquistarem independência financeira através de receitas
@@ -274,7 +274,7 @@ export default function LandingPage() {
                 <Gift className="mt-1 h-6 w-6 shrink-0" />
                 <div>
                   <h3 className="font-headline text-xl font-semibold">
-                    PDF Brownie Supreme
+                    E-book Brownie Supreme
                   </h3>
                   <p className="text-primary-foreground/80">
                     De <span className="line-through">R$ 250,00</span> por <span className="line-through">R$ 150,00</span>. Hoje, de graça nesta oferta.
@@ -325,7 +325,7 @@ export default function LandingPage() {
         <section className="container py-16 md:py-24">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
-              O que você vai aprender no PDF Brownie Supreme
+              O que você vai aprender no E-book Brownie Supreme
             </h2>
             <p className="mt-4 text-lg text-foreground/80">
               Um guia completo, passo a passo, para você dominar a arte de
@@ -416,7 +416,7 @@ export default function LandingPage() {
                 </CardHeader>
                 <CardContent className="space-y-2 text-foreground/80">
                   <p>Passo a passo para quem está começando na confeitaria</p>
-                  <p>Suporte exclusivo com a Professora Eloisa Cola</p>
+                  <p>Suporte exclusivo com a Professora Ana Prado</p>
                   <p>
                     Metodologia descomplicada: receitas econômicas e saborosas
                   </p>
